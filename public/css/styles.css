@@ -46,7 +46,7 @@ input{
     padding: 8px;
 }
 
-button{
+#submit{
     cursor: pointer;
     border: 1px solid #888888;
     background: #888888;

@@ -12,7 +12,7 @@ const forecast = (longitude, latitude, callback)=>{
         }
         else{
             console.log(body.daily[0])
-            callback(undefined, "Temerature: "+ body.current.temp + ' degrees' + '<br>'+'Maximum Temperature: '+body.daily[0].temp.max+ ' degrees'+'<br>'+'Minimum Temperature: '+body.daily[0].temp.min+ ' degrees'+"<br>"+"Description: " + body.daily[0].weather[0].description)
+            callback(undefined, 'Its '+ body.current.temp + ' degrees currently. '+'Maximum Temperature is '+body.daily[0].temp.max+ ' degrees. '+'Minimum Temperature is '+body.daily[0].temp.min+ ' degrees. '+'Description: ' + body.daily[0].weather[0].description)
         }
     }
 )
